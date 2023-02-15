@@ -49,8 +49,10 @@ jobs:
               delete core\src\main\c\checkleak.dll core\src\main\resources\platforms-lib\windows\checkleak.dll
               copy core\src\main\c\checkleak.dll core\src\main\resources\platforms-lib\windows\checkleak.dll
             shell: cmd
+            
           - name: Run Tests with Maven
             run: mvn -B clean verify
+            
           - name: Configure Git author
             run: |
               git config --local user.email "action@github.com"
