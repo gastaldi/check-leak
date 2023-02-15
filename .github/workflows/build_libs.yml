@@ -7,8 +7,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-    build_windows:
-        name: Build on Windows
+    build_windows_libs:
+        name: Build DLL on Windows
         strategy:
           fail-fast: false
         runs-on: windows-latest
