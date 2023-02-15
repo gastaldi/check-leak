@@ -57,6 +57,6 @@ jobs:
               git config --local user.name "GitHub Action"
 
           - name: Git commit and push
-            run:|
-             git commit -a -m "Update checkleak.dll"
-             git push
+            run: |
+              git commit -a -m "Update checkleak.dll"
+              git push
